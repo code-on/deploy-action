@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Check
-        uses: code-on/deploy-action@v1
+        uses: code-on/deploy-action@master
         with:
           fab-command: 'test'
