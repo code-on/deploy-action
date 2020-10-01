@@ -1,0 +1,12 @@
+name: 'Deploy action'
+description: 'Run fab commands and more'
+icon: terminal
+inputs:
+  fab-command:  # id of input
+    description: 'fabric command'
+    required: tru
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ fab-command }}
