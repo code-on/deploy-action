@@ -9,4 +9,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ fab-command }}
+    - ${{ inputs.fab-command }}
